@@ -1,2 +1,10 @@
-# clown-code-for-
-p/j/n/d/h/c/c/............
+flipkart_clone/
+│
+├── app.py
+├── templates/
+│   ├── index.html
+│   ├── cart.html
+│
+└── static/
+    └── style.css
+    
