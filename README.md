@@ -1,10 +1,2 @@
-flipkart_clone/
-│
-├── app.py
-├── templates/
-│   ├── index.html
-│   ├── cart.html
-│
-└── static/
-    └── style.css
-    
+This repository contains my clone app projects.
+I am building popular apps like Flipkart, Amazon, and Netflix using modern web technologies.
