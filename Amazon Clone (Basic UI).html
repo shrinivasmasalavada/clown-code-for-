@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Amazon Clone</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #eaeded;
+    }
+
+    /* Header */
+    header {
+        background: #131921;
+        color: white;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .search-box input {
+        width: 400px;
+        padding: 8px;
+        border: none;
+    }
+
+    .nav {
+        display: flex;
+        gap: 15px;
+    }
+
+    /* Sub Navbar */
+    .subnav {
+        background: #232f3e;
+        color: white;
+        padding: 8px;
+        display: flex;
+        gap: 15px;
+    }
+
+    /* Banner */
+    .banner img {
+        width: 100%;
+    }
+
+    /* Products */
+    .products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .card {
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .price {
+        color: #b12704;
+        font-weight: bold;
+    }
+
+    button {
+        background: #ffd814;
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        background: #f7ca00;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Amazon</div>
+    <div class="search-box">
+        <input type="text" placeholder="Search Amazon">
+    </div>
+    <div class="nav">
+        <div>Account</div>
+        <div>Orders</div>
+        <div>Cart</div>
+    </div>
+</header>
+
+<div class="subnav">
+    <div>All</div>
+    <div>Mobiles</div>
+    <div>Fashion</div>
+    <div>Electronics</div>
+    <div>Home</div>
+</div>
+
+<div class="banner">
+    <img src="https://via.placeholder.com/1200x300">
+</div>
+
+<div class="products">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <p>iPhone</p>
+        <p class="price">₹79,999</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <p>Smart TV</p>
+        <p class="price">₹25,000</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <p>Shoes</p>
+        <p class="price">₹1,999</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/200">
+        <p>Headphones</p>
+        <p class="price">₹999</p>
+        <button>Add to Cart</button>
+    </div>
+
+</div>
+
+<script>
+    const buttons = document.querySelectorAll("button");
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            alert("Item added to cart!");
+        });
+    });
+</script>
+
+</body>
+</html>
